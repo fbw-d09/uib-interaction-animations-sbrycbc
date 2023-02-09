@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   width: 100vw;
+   height: 100vh;
+}
+.strobe {
+    width: 100%;
+    border-right: 4px dashed yellowgreen; 
+}
+
+.strobe:hover {
+
+    animation:farbeee 0.7s linear infinite  alternate;
+}
+
+
+
+@keyframes farbeee {
+    0%   {background-color: yellow;}
+    25%  {background-color: yellow;}
+    70%  {background-color: yellow;}
+    100% {background-color: white;}
+  }
